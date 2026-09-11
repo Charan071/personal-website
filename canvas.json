@@ -1,0 +1,69 @@
+{
+  "artboards": [
+    {
+      "file": "DirectionA.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1200,
+      "h": 1300,
+      "title": "Option A"
+    },
+    {
+      "file": "DirectionB.dc.html",
+      "x": 1280,
+      "y": 0,
+      "w": 1200,
+      "h": 1300,
+      "title": "Option B"
+    },
+    {
+      "file": "DirectionC.dc.html",
+      "x": 2560,
+      "y": 0,
+      "w": 1200,
+      "h": 1300,
+      "title": "Option C"
+    },
+    {
+      "file": "Main.dc.html",
+      "x": 1280,
+      "y": 1420,
+      "w": 1200,
+      "h": 1300,
+      "title": "Main (current lead)"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "note-a",
+      "x": 0,
+      "y": -110,
+      "w": 320,
+      "text": "Option A \u2014 Terminal Minimal\nDark, monospace, engineer-first tone."
+    },
+    {
+      "id": "note-b",
+      "x": 1280,
+      "y": -110,
+      "w": 320,
+      "text": "Option B \u2014 Kinetic Editorial\nBold display type, warm accent, creative-technologist tone.\nCurrently the lead, shown again below in Main."
+    },
+    {
+      "id": "note-c",
+      "x": 2560,
+      "y": -110,
+      "w": 320,
+      "text": "Option C \u2014 Systems Grid\nStructured, product-like, indigo accent."
+    },
+    {
+      "id": "note-main",
+      "x": 1280,
+      "y": 1310,
+      "w": 320,
+      "text": "Main \u2014 Warm architectural direction. Ivory, spacious typography, sunlit workspace."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}

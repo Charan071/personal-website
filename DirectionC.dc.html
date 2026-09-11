@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #4A4FE0; text-decoration: none; }
+    a:hover { color: #3639B8; }
+    .sg-nav-link { color: #5B6472; text-decoration: none; font-size: 14px; font-weight: 500; }
+    .sg-nav-link:hover { color: #4A4FE0; }
+    .sg-btn:hover { background: #3639B8 !important; }
+  </style>
+</helmet>
+<div style="background:#F7F8FA; color:#14171F; font-family:'Manrope', system-ui, sans-serif; min-height:100%; box-sizing:border-box;">
+
+  <div style="display:flex; justify-content:space-between; align-items:center; padding:24px 48px; border-bottom:1px solid #E4E7EC;">
+    <div style="font-weight:800; font-size:16px;">Charan Naik</div>
+    <div style="display:flex; gap:32px;">
+      <a class="sg-nav-link" href="#work">Work</a>
+      <a class="sg-nav-link" href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns: 1.1fr 0.9fr; gap:48px; padding:80px 48px; align-items:center;">
+    <div>
+      <div style="display:inline-block; font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.06em; text-transform:uppercase; color:#4A4FE0; border:1px solid #4A4FE0; padding:5px 12px; border-radius:20px; margin-bottom:24px;">AI Engineer — Bengaluru, India</div>
+      <h1 style="font-size:56px; font-weight:800; line-height:1.08; margin:0 0 20px;">Charan Naik</h1>
+      <p style="max-width:480px; font-size:18px; line-height:1.6; color:#5B6472; margin:0 0 32px;">I turn AI capability into usable products — LLM apps, RAG systems, and agentic workflows, built to ship rather than demo.</p>
+      <div style="display:flex; gap:16px; align-items:center;">
+        <div class="sg-btn" style="background:#4A4FE0; color:#FFFFFF; padding:14px 24px; border-radius:8px; font-size:15px; font-weight:700;">See the work</div>
+        <a href="#contact" style="font-size:15px; font-weight:600; text-decoration:underline;">charan@aixccelerate.com</a>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; padding:32px; background:#FFFFFF; border:1px solid #E4E7EC; border-radius:12px;">
+      <div style="aspect-ratio:1; background:#EEF0FF; border-radius:6px;"></div>
+      <div style="aspect-ratio:1; background:#4A4FE0; border-radius:6px;"></div>
+      <div style="aspect-ratio:1; background:#EEF0FF; border-radius:6px;"></div>
+      <div style="aspect-ratio:1; background:#EEF0FF; border-radius:6px;"></div>
+      <div style="aspect-ratio:1; background:#EEF0FF; border-radius:6px;"></div>
+      <div style="aspect-ratio:1; background:#4A4FE0; border-radius:6px;"></div>
+      <div style="aspect-ratio:1; background:#4A4FE0; border-radius:6px;"></div>
+      <div style="aspect-ratio:1; background:#EEF0FF; border-radius:6px;"></div>
+      <div style="aspect-ratio:1; background:#EEF0FF; border-radius:6px;"></div>
+    </div>
+  </div>
+
+  <div id="work" style="padding:24px 48px 88px;">
+    <div style="font-size:30px; font-weight:800; margin-bottom:32px;">Selected work</div>
+    <div style="display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:24px;">
+
+      <div style="background:#FFFFFF; border:1px solid #E4E7EC; border-radius:10px; padding:28px;">
+        <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:#5B6472; margin-bottom:14px;">RAG</div>
+        <div style="font-size:20px; font-weight:700; margin-bottom:10px;">RAG Knowledge Agent</div>
+        <div style="font-size:14px; color:#5B6472; line-height:1.55; margin-bottom:16px;">Pulls context straight from Google Drive, indexes it in Pinecone, and answers through OpenAI — no manual retraining when the docs change.</div>
+        <div style="display:flex; gap:6px; flex-wrap:wrap;">
+          <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; background:#F2F3F7; color:#5B6472; padding:3px 8px; border-radius:4px;">LangChain</div>
+          <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; background:#F2F3F7; color:#5B6472; padding:3px 8px; border-radius:4px;">Pinecone</div>
+        </div>
+      </div>
+
+      <div style="background:#FFFFFF; border:1px solid #E4E7EC; border-radius:10px; padding:28px;">
+        <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:#5B6472; margin-bottom:14px;">Automation</div>
+        <div style="font-size:20px; font-weight:700; margin-bottom:10px;">Onboarding Agent</div>
+        <div style="font-size:14px; color:#5B6472; line-height:1.55; margin-bottom:16px;">Automates new-hire setup across Slack, Jira, and Entra ID with tool-calling — one agent instead of a checklist of manual invites.</div>
+        <div style="display:flex; gap:6px; flex-wrap:wrap;">
+          <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; background:#F2F3F7; color:#5B6472; padding:3px 8px; border-radius:4px;">n8n</div>
+          <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; background:#F2F3F7; color:#5B6472; padding:3px 8px; border-radius:4px;">Entra ID</div>
+        </div>
+      </div>
+
+      <div style="background:#FFFFFF; border:1px solid #E4E7EC; border-radius:10px; padding:28px;">
+        <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:#5B6472; margin-bottom:14px;">Assistant</div>
+        <div style="font-size:20px; font-weight:700; margin-bottom:10px;">Live-Data Chat Assistant</div>
+        <div style="font-size:14px; color:#5B6472; line-height:1.55; margin-bottom:16px;">A conversational assistant wired to live data sources — built for teams who want answers, not another dashboard to check.</div>
+        <div style="display:flex; gap:6px; flex-wrap:wrap;">
+          <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; background:#F2F3F7; color:#5B6472; padding:3px 8px; border-radius:4px;">Gemini</div>
+          <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; background:#F2F3F7; color:#5B6472; padding:3px 8px; border-radius:4px;">n8n</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="contact" style="display:flex; justify-content:space-between; align-items:center; padding:32px 48px; border-top:1px solid #E4E7EC;">
+    <div style="color:#5B6472; font-size:14px;">© 2026 Charan Naik</div>
+    <div style="display:flex; gap:24px;">
+      <a class="sg-nav-link" href="#">GitHub</a>
+      <a class="sg-nav-link" href="#">Email</a>
+      <a class="sg-nav-link" href="#">linkedin.com/in/charan-s-naik</a>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

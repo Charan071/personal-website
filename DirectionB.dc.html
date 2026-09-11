@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #FF5C39; text-decoration: none; }
+    a:hover { color: #E0431F; }
+    .ed-nav-link { color: #201A15; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; }
+    .ed-nav-link:hover { color: #FF5C39; }
+    .ed-btn-primary:hover { background: #FF5C39 !important; color: #FBF6F0 !important; }
+  </style>
+</helmet>
+<div style="background:#FBF6F0; color:#201A15; font-family:'Space Grotesk', system-ui, sans-serif; min-height:100%; box-sizing:border-box; overflow:hidden;">
+
+  <div style="display:flex; justify-content:space-between; align-items:center; padding:32px 48px; position:relative; z-index:2;">
+    <div style="width:36px; height:36px; background:#FF5C39; color:#FBF6F0; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; transform:rotate(-4deg); border-radius:4px;">CN</div>
+    <div style="display:flex; gap:32px;">
+      <a class="ed-nav-link" href="#work">Work</a>
+      <a class="ed-nav-link" href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <div style="position:relative; padding:56px 48px 100px;">
+    <div style="position:absolute; top:60px; right:-60px; width:56%; height:200px; background:#F2C8B4; transform:rotate(-3deg); border-radius:12px; z-index:0;"></div>
+
+    <div style="position:relative; z-index:1;">
+      <div style="color:#8c7a6b; font-size:13px; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:20px; font-weight:500;">AI Engineer · Bengaluru, India</div>
+      <h1 style="font-family:'Instrument Serif', Georgia, serif; font-style:italic; font-size:112px; line-height:0.95; font-weight:400; margin:0 0 28px; color:#201A15;">Charan Naik</h1>
+      <p style="max-width:560px; font-size:20px; line-height:1.6; color:#4a3f36; margin:0 0 36px;">I turn AI capability into usable products — LLM apps, RAG pipelines, and agentic workflows that ship, not just demo.</p>
+      <div style="display:flex; gap:20px; align-items:center;">
+        <div class="ed-btn-primary" style="background:#201A15; color:#FBF6F0; padding:16px 28px; border-radius:6px; font-size:15px; font-weight:500;">View the work</div>
+        <a href="#contact" style="font-size:15px; text-decoration:underline; font-weight:500;">charan@aixccelerate.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="work" style="padding:24px 48px 88px; position:relative; z-index:1;">
+    <div style="font-family:'Instrument Serif', Georgia, serif; font-style:italic; font-size:40px; margin-bottom:36px;">Selected work</div>
+
+    <div style="display:grid; grid-template-columns: 1.6fr 1fr; gap:28px;">
+      <div style="background:#FFFCF8; border:1px solid #EBDDD0; border-radius:10px; padding:36px;">
+        <div style="display:flex; gap:8px; margin-bottom:18px;">
+          <div style="border:1px solid #D9A98A; color:#8c5a3c; font-size:12px; padding:4px 10px; border-radius:20px;">flagship</div>
+        </div>
+        <div style="font-size:26px; font-weight:700; margin-bottom:10px;">RAG Knowledge Agent</div>
+        <div style="font-size:16px; color:#5c4f43; line-height:1.6; margin-bottom:18px;">Pulls context straight from Google Drive, indexes it in Pinecone, and answers through OpenAI — a document-grounded assistant with no manual retraining.</div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <div style="background:#F2E9DF; font-size:12px; padding:4px 10px; border-radius:20px; color:#5c4f43;">LangChain</div>
+          <div style="background:#F2E9DF; font-size:12px; padding:4px 10px; border-radius:20px; color:#5c4f43;">Pinecone</div>
+          <div style="background:#F2E9DF; font-size:12px; padding:4px 10px; border-radius:20px; color:#5c4f43;">OpenAI</div>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:28px;">
+        <div style="background:#FFFCF8; border:1px solid #EBDDD0; border-radius:10px; padding:28px; flex:1;">
+          <div style="font-size:20px; font-weight:700; margin-bottom:8px;">Onboarding Agent</div>
+          <div style="font-size:14px; color:#5c4f43; line-height:1.55;">Automates new-hire setup across Slack, Jira, and Entra ID with tool-calling — one agent instead of a checklist of invites.</div>
+        </div>
+        <div style="background:#FFFCF8; border:1px solid #EBDDD0; border-radius:10px; padding:28px; flex:1;">
+          <div style="font-size:20px; font-weight:700; margin-bottom:8px;">Live-Data Chat Assistant</div>
+          <div style="font-size:14px; color:#5c4f43; line-height:1.55;">A conversational assistant wired to live data sources — answers, not another dashboard to check.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" style="display:flex; justify-content:space-between; align-items:center; padding:36px 48px; border-top:1px solid #EBDDD0;">
+    <div style="color:#8c7a6b; font-size:14px;">© 2026 Charan Naik</div>
+    <div style="display:flex; gap:24px;">
+      <a href="#" class="ed-nav-link" style="color:#8c7a6b;">GitHub</a>
+      <a href="#" class="ed-nav-link" style="color:#8c7a6b;">Email</a>
+      <a href="#" class="ed-nav-link" style="color:#8c7a6b;">linkedin.com/in/charan-s-naik</a>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

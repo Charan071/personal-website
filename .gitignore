@@ -1,0 +1,8 @@
+.DS_Store
+.playwright-mcp/
+skill-observations/
+linkedin-raw*.txt
+resume-content.md
+node_modules/
+.env
+.env.*
