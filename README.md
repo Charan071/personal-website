@@ -16,8 +16,27 @@ The background uses a slow animated zoom, ambient light, and pointer parallax. A
 
 After editing `index.html`, run `python3 scripts/sync-design.py` to update the self-contained design previews.
 
-## Design files
+## Project structure
 
-`Main.dc.html` and `charan-naik-portfolio.html` contain the current design preview. `DirectionA.dc.html`, `DirectionB.dc.html`, and `DirectionC.dc.html` preserve the initial explorations.
+```text
+index.html                  Website markup and content
+assets/
+  css/styles.css            Layout, responsive styles, and animations
+  js/main.js                Scroll flight and motion controls
+  images/                   Images used by the website
+  README.md                 Image provenance and generation briefs
+design/
+  Main.dc.html              Self-contained current design preview
+  charan-naik-portfolio.html Full design canvas
+  Direction*.dc.html        Original design explorations
+  canvas.json               Canvas layout
+  reference/                Original background before plane extraction
+scripts/
+  sync-design.py            Rebuild the self-contained design previews
+reference/                  Local résumé and source notes (gitignored)
+skill-observations/         Local agent workflow notes (gitignored)
+```
 
-The generated background and its brief are in `assets/`.
+Edit `index.html`, `assets/css/styles.css`, or `assets/js/main.js` for site changes. Then run `python3 scripts/sync-design.py` to keep both design previews up to date.
+
+Only `index.html` and `assets/` are needed to serve the website. The design archive and local notes are not website dependencies.
