@@ -6,6 +6,6 @@ resume-content.md
 node_modules/
 .env
 .env.*
-reference/
+/reference/
 __pycache__/
 *.pyc
